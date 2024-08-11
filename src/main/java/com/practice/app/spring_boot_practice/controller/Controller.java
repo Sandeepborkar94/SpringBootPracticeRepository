@@ -12,5 +12,4 @@ public class Controller
 		return "APP IS WORKING";
 		
 	}
-
 }
