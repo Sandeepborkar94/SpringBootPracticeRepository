@@ -1,6 +1,7 @@
 package com.practice.app.spring_boot_practice.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -37,7 +38,7 @@ public class EmployeeController {
 	}
 
 	@GetMapping("/{id}")
-	public ResponseEntity<Employee> getEmployeeById(@PathVariable Long id) {
+	public Optional<Employee> getEmployeeById(@PathVariable Long id) {
 		return employeeService.getEmployeeById(id);
 	}
 
